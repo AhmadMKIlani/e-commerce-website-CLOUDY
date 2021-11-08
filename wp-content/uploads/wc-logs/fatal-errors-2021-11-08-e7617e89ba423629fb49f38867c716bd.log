@@ -1,0 +1,40 @@
+2021-11-08T06:27:31+00:00 CRITICAL Uncaught Error: Undefined constant "WP_ENVIRONMENT_TYPE" in C:\xampp\htdocs\CLOUDY\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Schedulers\MailchimpScheduler.php:90
+Stack trace:
+#0 C:\xampp\htdocs\CLOUDY\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Schedulers\MailchimpScheduler.php(90): constant('WP_ENVIRONMENT_...')
+#1 C:\xampp\htdocs\CLOUDY\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Schedulers\MailchimpScheduler.php(58): Automattic\WooCommerce\Admin\Schedulers\MailchimpScheduler->make_request('A.marwankilani@...')
+#2 C:\xampp\htdocs\CLOUDY\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Events.php(109): Automattic\WooCommerce\Admin\Schedulers\MailchimpScheduler->run()
+#3 C:\xampp\htdocs\CLOUDY\wp-includes\class-wp-hook.php(303): Automattic\WooCommerce\Admin\Events->do_wc_admin_daily()
+#4 C:\xampp\htdocs\CLOUDY\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\CLOUDY\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\CLOUDY\wp-cron.php(138): do_action_ref_array('wc_admin_daily', Array)
+#7 {main}
+  thrown in C:\xampp\htdocs\CLOUDY\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Schedulers\MailchimpScheduler.php on line 90
+
+2021-11-08T10:15:47+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Error::get_data() in C:\xampp\htdocs\CLOUDY\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\RestApi.php:64
+Stack trace:
+#0 C:\xampp\htdocs\CLOUDY\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypes\AbstractBlock.php(359): Automattic\WooCommerce\Blocks\RestApi->get_routes_from_namespace('wc/store')
+#1 C:\xampp\htdocs\CLOUDY\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypes\AbstractBlock.php(297): Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock->enqueue_data(Array)
+#2 C:\xampp\htdocs\CLOUDY\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypes\AbstractBlock.php(85): Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock->enqueue_assets(Array)
+#3 C:\xampp\htdocs\CLOUDY\wp-includes\class-wp-block.php(221): Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock->render_callback(Array, '', Object(WP_Block))
+#4 C:\xampp\htdocs\CLOUDY\wp-includes\blocks.php(868): WP_Block->render()
+#5 C:\xampp\htdocs\CLOUDY\wp-includes\blocks.php(906): render_block(Array)
+#6 C:\xampp\htdocs\CLOUDY\wp-includes\class-wp-hook.php(305): do_blocks('<!-- wp:woocomm...')
+#7 C:\xampp\htdocs\CLOUDY\wp-includes\plugin.php(189): WP_Hook->apply_filters('<!-- wp:woocomm...', Array)
+#8 C:\xampp\htdocs\CLOUDY\wp-includes\widgets\class-wp-widget-block.php(81): apply_filters('widget_block_co...', '<!-- wp:woocomm...', Array, Object(WP_Widget_Block))
+#9 C:\xampp\htdocs\CLOUDY\wp-includes\class-wp-widget.php(393): WP_Widget_Block->widget(Array, Array)
+#10 C:\xampp\htdocs\CLOUDY\wp-includes\widgets.php(831): WP_Widget->display_callback(Array, Array)
+#11 C:\xampp\htdocs\CLOUDY\wp-content\themes\storefront\inc\storefront-template-functions.php(116): dynamic_sidebar('footer-1')
+#12 C:\xampp\htdocs\CLOUDY\wp-includes\class-wp-hook.php(303): storefront_footer_widgets('')
+#13 C:\xampp\htdocs\CLOUDY\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#14 C:\xampp\htdocs\CLOUDY\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#15 C:\xampp\htdocs\CLOUDY\wp-content\themes\storefront\footer.php(27): do_action('storefront_foot...')
+#16 C:\xampp\htdocs\CLOUDY\wp-includes\template.php(770): require_once('C:\\xampp\\htdocs...')
+#17 C:\xampp\htdocs\CLOUDY\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#18 C:\xampp\htdocs\CLOUDY\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#19 C:\xampp\htdocs\CLOUDY\wp-content\themes\storefront\template-homepage.php(38): get_footer()
+#20 C:\xampp\htdocs\CLOUDY\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#21 C:\xampp\htdocs\CLOUDY\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#22 C:\xampp\htdocs\CLOUDY\index.php(17): require('C:\\xampp\\htdocs...')
+#23 {main}
+  thrown in C:\xampp\htdocs\CLOUDY\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\RestApi.php on line 64
+
